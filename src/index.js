@@ -26,7 +26,7 @@ app.delete('/excluirCliente/:id', (req,res) => {
     res.send("Cliente ID " + id + " foi excluído com sucesso!");
 });
 
-app.get('consultarCliente', (req,res) => {
+app.get('/consultarCliente', (req,res) => {
     const {nome, idade} = req.query;
     
     res.send("Cliente " + nome + " localizado e sua idade é: " + idade)
