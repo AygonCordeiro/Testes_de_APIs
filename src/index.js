@@ -14,7 +14,7 @@ app.get('/mensagem', (req,res) => {
             } );
 });
 
-app.post(';inserirCliente', (req,res) => {
+app.post('/inserirCliente', (req,res) => {
     const {nome} = req.body;
 
     res.send("Cliente " + nome + " foi recebido com sucesso!");
